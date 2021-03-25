@@ -5,6 +5,13 @@
     display: flex;
     flex-direction: column;
 }
+.Gras
+{
+    font-weight: 800;
+    padding: 0;
+    display: inline-block;
+    font-size: 1.1em;
+}
 body
 {
     margin: 0;
@@ -135,20 +142,42 @@ nav
     margin-right: 20px;
 }
 
+nav ul
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+
 nav ul li
 {
     list-style-type: none;
-    padding: 5px;
-    margin: 15px;
+    margin: 0 15px 15px 15px;
     font-size: 15px;
     display: inline-block;
     color: #0065FC;
+    width: 130px;
+    text-align: center;
 }
 nav a
 {
     text-decoration: none;
     font-weight: 500;
 
+}
+#input::placeholder
+{
+    color: black;
+    font-weight: 500;
+}
+#hébergement_link
+{
+    border-top: solid #0065FC;
+    padding-top : 30px;
+    font-weight: normal;
+}
+#Activités_link a
+{
+    color: black;
 }
 
 #Conteneur2
@@ -174,8 +203,6 @@ nav a
     margin-right: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 20px;
-    display: inline-block;
-    flex-wrap: wrap;
 }
 
 .SousElement11 img
@@ -187,7 +214,7 @@ nav a
 }
 .SousElement11
 {
-    margin: 11px;
+    margin: 17px;
     padding: 7px;
     display: inline-block;
     width: 240px;
@@ -220,14 +247,15 @@ nav a
 
 #SousElement2
 {
-    height: 500px;
+    height: auto;
     width: 29%;
     padding: 20px;
     margin-right: 20px;
     margin-left: 10px;
     background-color: rgb(242, 242, 242);
     border-radius: 20px;
-}#SousElement2  i
+}
+#SousElement2  i
 {
     display: inline-block;
 }
@@ -241,18 +269,18 @@ nav a
     display: inline-block;
     margin-left: 180px;
 }
-#SousElement2 img
+
+.SousElement22 img
 {
     height: 120px;
     width: 120px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin: 5px;
+    object-fit: cover;
 }
-
 .SousElement22  figcaption
 {
-    width: 100%;
     margin-top: 5px;
     margin-left: 15px;
     display: inline-block;
@@ -265,9 +293,100 @@ nav a
     display: flex;   
 }
 
+/* ACTIVITES*/
 
+#Activités
+{
+    margin: 30px 20px 30px 20px;
+    height: auto;
+}
+
+#BlocActivités
+{   
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 100%;
+}
+
+.Img1
+{
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 3px 1px 5px 4px #F2F2F2 ;
+}
+.Img1 img
+{
+  height: 354px;
+  width: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.Img1 figcaption
+{
+    font-weight: 700;
+    padding: 2px 0 0 7px;
+}
+.Img2 figcaption
+{
+    font-weight: 700;
+    padding: 2px 0 0 7px;
+}
+.Images2
+{
+    display: inline-block;
+    width: 280px;
+    margin: 40px;
+}
+
+.Img2dessus
+{
+    display: inline-block;
+    margin: 0 30px 15px 30px;
+}
+.Img2dessous
+{
+    display: inline-block;
+    margin:  0 30px 15px 30px;
+}
+.Img2
+{
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 1px 5px 4px #F2F2F2;
+    display: inline-block;
+}
+.Img2 img
+{
+    width: 250px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 .Pieddepage
 {
     background-color: rgb(242, 242, 242);
+    padding: 20px;
+}
+
+.Partie
+{
+    display: inline-block;
+    margin-right: 250px;
+}
+
+.Partie ul  
+{
+    list-style: none;
+    padding: 0;
+}
+.Partie a
+{
+    text-decoration: none;
+    color: black;
 }
