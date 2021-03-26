@@ -211,6 +211,7 @@ nav a
     height: 130px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 .SousElement11
 {
@@ -312,6 +313,7 @@ nav a
 {
     width: 250px;
     height: auto;
+    margin: 0 40px 0 40px;
     padding-bottom: 20px;
     border-radius: 15px;
     display: inline-block;
@@ -344,12 +346,12 @@ nav a
 .Img2dessus
 {
     display: inline-block;
-    margin: 0 30px 15px 30px;
+    margin: 0 20px 15px 20px;
 }
 .Img2dessous
 {
     display: inline-block;
-    margin:  0 30px 15px 30px;
+    margin:  0 20px 15px 20px;
 }
 .Img2
 {
@@ -378,6 +380,8 @@ nav a
 {
     display: inline-block;
     margin-right: 250px;
+    vertical-align: top;
+    
 }
 
 .Partie ul  
@@ -390,3 +394,4 @@ nav a
     text-decoration: none;
     color: black;
 }
+
