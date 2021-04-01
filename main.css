@@ -15,6 +15,9 @@
 body
 {
     margin: 0;
+    background: url(Photos/Reservia@3x.png) no-repeat;
+    background-size: 90px;
+    background-position: top 20px left 20px;
 }
 
 .fas.fa-star, .far.fa-star
@@ -135,9 +138,6 @@ nav
 {
     display: flex;
     justify-content: flex-end;
-    background: url(Photos/Reservia@3x.png) no-repeat;
-    background-size: 90px;
-    background-position-y: center;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -204,7 +204,11 @@ nav a
     background-color: rgb(242, 242, 242);
     border-radius: 20px;
 }
-
+#SousElement1 a
+{
+    text-decoration: none;
+    color: black;
+}
 .SousElement11 img
 {
     width: 240px;
@@ -212,6 +216,7 @@ nav a
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
+    margin-bottom: 5px;
 }
 .SousElement11
 {
@@ -223,10 +228,7 @@ nav a
     background-color: white;
     border-radius: 15px;
 }
-.SousElement11 figcaption
-{
-    margin: 5px;
-}
+
 #Afficher
 {
     text-decoration: none;
@@ -256,6 +258,11 @@ nav a
     background-color: rgb(242, 242, 242);
     border-radius: 20px;
 }
+#SousElement2 a
+{
+    color: black;
+    text-decoration: none;
+}
 #SousElement2  i
 {
     display: inline-block;
@@ -264,6 +271,10 @@ nav a
 {
     display: inline-block;
     margin: 15px;
+}
+.fas.fa-search
+{
+    visibility: hidden;
 }
 .fas.fa-chart-line
 {
@@ -284,13 +295,12 @@ nav a
 {
     margin-top: 5px;
     margin-left: 15px;
-    display: inline-block;
 }
 .SousElement22
 {
     background-color: white;
     border-radius: 15px;
-    margin: 15px;
+    margin: 25px 15px 30px 15px;
     display: flex;   
 }
 
@@ -307,6 +317,11 @@ nav a
     flex-wrap: wrap;
     display: inline-block;
     width: 100%;
+}
+#BlocActivités a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .Img1
@@ -395,3 +410,79 @@ nav a
     color: black;
 }
 
+/* RESPONSIVE*/
+
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        width: 380px;
+        margin: 0;
+    }
+    header h1
+    {
+        font-size: 1.7em;
+    }
+    header p 
+    {
+        font-size: 1.2em;
+    }
+   nav ul 
+   {
+       height: 300px;
+       display: flex;
+   }
+   #Inscription
+   {    
+        margin-top: 20px;
+        margin-left: 60px;
+
+   }
+   #Activités_link
+   {
+       margin-top: 100px;
+       margin-left: 175px;
+   }
+   #Rechercher
+   {
+        display: none;
+   }
+   .fas.fa-search
+   {
+       visibility: visible;
+   }
+   #Filtres p   
+   {
+       display: block;
+   }
+   .Filters
+   {
+       margin-top: 7px;
+   }
+   #Conteneur2
+   {
+       display: flex;
+       flex-direction: column;
+   }
+   #SousElement1
+   {
+       margin: 0;
+       display: inline-block;
+       width: 380px;
+       border-radius: 0;
+       order: 2;
+       background-color: white;
+   }
+   .SousElement11
+   {
+       margin-left: 40px;  
+       border-radius: 15px;
+       box-shadow: 1px 1px 7px 4px #F2F2F2, -1px -1px 7px 4px #F2F2F2;
+   #SousElement2
+   {
+       margin: 0;
+       display: inline-block;
+       width: 380px;
+       border-radius: 0;
+   }
+}
