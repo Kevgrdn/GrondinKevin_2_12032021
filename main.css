@@ -274,7 +274,7 @@ nav a
 }
 .fas.fa-search
 {
-    visibility: hidden;
+    display: none;
 }
 .fas.fa-chart-line
 {
@@ -295,6 +295,10 @@ nav a
 {
     margin-top: 5px;
     margin-left: 15px;
+}
+.SousElement22 figure
+{
+    margin: 0;
 }
 .SousElement22
 {
@@ -326,9 +330,9 @@ nav a
 
 .Img1
 {
-    width: 250px;
+    width: 300px;
     height: auto;
-    margin: 0 40px 0 40px;
+    margin: 0 25px 0 25px;
     padding-bottom: 20px;
     border-radius: 15px;
     display: inline-block;
@@ -336,53 +340,153 @@ nav a
 }
 .Img1 img
 {
-  height: 354px;
-  width: 250px;
+  height: 380px;
+  width: 300px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 .Img1 figcaption
 {
     font-weight: 700;
-    padding: 2px 0 0 7px;
+    padding: 7px 0 0 5px;
 }
-.Img2 figcaption
+
+.Img2 figure
 {
-    font-weight: 700;
-    padding: 2px 0 0 7px;
+    margin: 0;
+}
+.Img1 figure
+{
+    margin: 0;
 }
 .Images2
 {
     display: inline-block;
-    width: 280px;
-    margin: 40px;
+    width: 300px;
+    margin: 20px;
 }
-
 .Img2dessus
 {
     display: inline-block;
-    margin: 0 20px 15px 20px;
+    margin: 0;
 }
-.Img2dessous
-{
-    display: inline-block;
-    margin:  0 20px 15px 20px;
-}
+
+
 .Img2
 {
-    width: 250px;
-    height: auto;
-    padding-bottom: 20px;
+    width: 300px;
+    height: 220px;
     border-radius: 15px;
     box-shadow: 3px 1px 5px 4px #F2F2F2;
     display: inline-block;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+}
+.Img2 figcaption
+{
+    Padding: 5px 0 0 7px;
+    font-weight: 700;
 }
 .Img2 img
 {
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 180px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
+}
+.Img3
+{
+    width: 300px;
+    height: 150px;
+    box-shadow: 3px 1px 5px 4px #F2F2F2;
+    border-radius: 15px;
+    margin: 25px 0 0 0;
+    font-weight: 700;
+
+}
+.Img3 img
+{
+    width: 300px;
+    height: 110px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+}
+.Img3 figure
+{
+    margin: 5px;
+}
+.Img11
+{
+    width: 300px;
+    height: auto;
+    margin: 0 25px 0 25px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 3px 1px 5px 4px #F2F2F2 ;
+}
+.Img11 img
+{
+  height: 380px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.Img11 figcaption
+{
+    font-weight: 700;
+    padding: 7px 0 0 5px;
+}
+.Img11 figure
+{
+    margin: 0;
+}
+
+.Img4
+{
+    height: 175px;
+    width: 300px;
+    font-weight: 700;
+    box-shadow: 3px 1px 5px 4px #F2F2F2 ;
+    border-radius: 15px;
+    margin: 0 0 25px 0;
+}
+.Img4 img
+{
+    width: 300px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Img4 figure
+{
+    margin: 0;
+    padding: 7px 0 0 5px;
+}
+.Img5
+{
+    height: 200px;
+    width: 300px;
+    box-shadow: 3px 1px 5px 4px #F2F2F2 ;
+    border-radius: 15px;
+    font-weight: 700;
+    margin: 25px 0 0 0;
+}
+.Img5 img
+{
+    height: 155px;
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Img5 figure
+{
+    margin: 0;
+    padding: 7px 0 0 5px;
 }
 
 .Pieddepage
@@ -409,47 +513,104 @@ nav a
     text-decoration: none;
     color: black;
 }
+span
+{
+    display: inline-block;
+}
+#Info
+{
+    margin-right: 5px;
+}
 
 /* RESPONSIVE*/
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 375px)
 {
     body
     {
-        width: 380px;
+        width: 375px;
         margin: 0;
+    }
+    header
+    {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px;
     }
     header h1
     {
-        font-size: 1.7em;
+        font-size: 1.9em;
     }
     header p 
     {
         font-size: 1.2em;
     }
+    section 
+    {
+        width: 100%;
+    }
+   nav  
+   {
+       height: 140px;
+       width: 375px;
+       display: flex;
+       margin: 0;
+   }
    nav ul 
    {
-       height: 300px;
+       padding: 0;
        display: flex;
+       flex-direction: row;
+       flex-wrap: wrap-reverse;
+       width: 100%;
+   }
+   nav ul li 
+   {
+       margin: 0;
+       width: 50%;
+       padding-top: 0;
+       text-align: center;
+   }
+   #Marqueur1
+   {
+       margin-left: 25px;
    }
    #Inscription
    {    
-        margin-top: 20px;
-        margin-left: 60px;
-
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 35px 5px 0 0;       
    }
    #Activités_link
    {
-       margin-top: 100px;
-       margin-left: 175px;
+       margin: 0px;
+       display: block;
+       padding-top: 0;
+       width: 50%;
+       border-bottom: solid #F2F2F2;
+       height: 30px;
    }
-   #Rechercher
+   #hébergement_link
    {
-        display: none;
+       display: block;
+       margin: 0;
+       width: 50%;
+       padding-top: 0;
+       border-bottom: solid #0065FC;
+       border-top: none;
+       height: 30px;
    }
    .fas.fa-search
    {
-       visibility: visible;
+       display: block;
+       background-color: #0065FC;
+       font-size: 1.3em;
+       padding: 11px 14px 13px 14px;
+       border-top-right-radius: 10px;
+       border-bottom-right-radius: 10px;
+       color: white;
    }
    #Filtres p   
    {
@@ -468,21 +629,168 @@ nav a
    {
        margin: 0;
        display: inline-block;
-       width: 380px;
+       width: 375px;
        border-radius: 0;
        order: 2;
        background-color: white;
    }
+   .fas.fa-chart-line
+   {
+       margin: 0;
+       padding-left: 3px;
+   }
+   #SousElement1
+   {
+       width: 100%;
+       padding: 0;
+       display: flex;
+       flex-direction: column;
+       margin: 0;
+   }
+   #Hébergements
+   {
+       margin-left: 10px;
+       width: 50%;
+   }
+   #Afficher
+   {
+       margin-left: 10px;
+       width: 50%;
+   }
    .SousElement11
    {
-       margin-left: 40px;  
+       width: 85%;
        border-radius: 15px;
        box-shadow: 1px 1px 7px 4px #F2F2F2, -1px -1px 7px 4px #F2F2F2;
+       margin: 5px 0 5px 4px;
+   }
+   .SousElement11 img
+   {
+       width: 100%;
+   }
+   .SousElement22
+   {
+       width: 85%;
+       margin: 5px 0 10px 10px;
+   }
    #SousElement2
    {
        margin: 0;
        display: inline-block;
-       width: 380px;
+       width: 100%;
        border-radius: 0;
+       padding: 0;
+   }
+   #search
+   {
+       display: none;
+   }
+   .Images2
+   {
+       margin: 0;
+   }
+   .Img1
+   {
+       height: 130px;
+       margin: 10px 0 10px 0;
+   }
+   .Img1 img 
+   {
+       height: 110px;
+   }
+   .Img2
+   {
+       height: 130px;
+       margin: 10px 0 10px 0;
+   }
+   .Img2 figure 
+   {
+       padding: 5px 0 5px 0;
+   }
+   .Img2 img 
+   {
+       height: 100px;
+   }
+   .Img3
+   {
+    margin: 10px 0 10px 0;
+}
+   .Img11
+   {
+       height: 130px;
+       margin: 10px 0 10px 0;
+   }
+   .Img11 img 
+   {
+       height: 110px;
+   }
+   .Img4
+   {
+       height: 150px;
+       margin: 10px 0 10px 0;
+   }
+   .Img4 img 
+   {
+       height: 110px;
+   }
+   .Img4 figure
+   {
+    padding: 5px 0 5px 0;
+   }
+   .Img5
+   {
+       height: 150px;
+       margin: 10px 0 40px 0;
+   }
+   .Img5 img 
+   {
+       height: 110px;
+       object-fit: cover;
+   }
+   .Partie
+   {
+       width: 300px;
+       margin-right: 0;
+   }
+   .Partie li 
+   {
+       margin-top: 10px;
+   }
+   #BlocActivités
+   {
+       display: flex;
+       margin-left: 20px;
+   }
+   #Activités
+   {
+       margin: 0;
+   }
+   #Activités h1 
+   {
+       margin-left: 15px;
+   }
+   .fas.fa-chart-line 
+   {
+       padding-left: 100px;
+   }
+   .fas.fa-info-circle
+   {
+       display: inline-block;
+       width: 10px;
+       margin-right: 5px;
+   }
+   span 
+   {
+       width: 80%;
+       vertical-align: top;
+   }
+   #Info
+   {
+       width: 5%;
+   }
+   p 
+   {
+       vertical-align: top;
    }
 }
+

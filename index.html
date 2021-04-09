@@ -16,27 +16,21 @@
     <div id="Conteneur">
         <nav>
             <ul>
-                <li>
-                    <div id="hébergement_link">
-                        <a href="#Hébergements"> Hébergements</a>
-                    </div>
+                <li id="hébergement_link">
+                    <a href="#Hébergements"> Hébergements</a>
                 </li>
-                <li>
-                    <div id="Activités_link">
-                        <a href="#Activités">Activités</a>
-                    </div>
+                <li id="Activités_link">
+                    <a href="#Activités">Activités</a>
                 </li>
-                <li>
-                    <div id="Inscription">
-                        <a href="...">S'inscrire</a>
-                    </div>
+                <li id="Inscription">
+                    <a href="...">S'inscrire</a>
                 </li>
             </ul>
         </nav>
     <header>
         <h1><strong> Trouvez votre hébergement pour des vacances de rêve</strong></h1>
         <p>En plein centre ville ou en pleine nature</p>
-            <div id="Marqueur1"><i class="fas fa-map-marker-alt"></i></div><div id="Ville"><input type="text" id="input" name="ville" placeholder="Marseille, France"></div><div id="Rechercher"><input type="submit" value="Rechercher"><i class="fas fa-search"></i></div>
+            <div id="Marqueur1"><i class="fas fa-map-marker-alt"></i></div><div id="Ville"><input type="text" id="input" name="ville" placeholder="Marseille, France"></div><div id="Rechercher"><input id="search" type="submit" value="Rechercher"><i class="fas fa-search"></i></div>
     <div id="Filtres">
         <p>Filtres</p>
             <div class="Filters">
@@ -52,7 +46,7 @@
                 <i class="fas fa-dog"></i>  Animaux autorisés 
             </div>   
     </div>
-        <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <p><span id="Info"><i class="fas fa-info-circle"></i></span><span> Plus de 500 logements sont disponibles dans cette ville</span></p>
     </header>
     <section>
         <div id="Conteneur2">
@@ -121,31 +115,36 @@
                         <a href="...">
                             <div class="SousElement22">
                                 <img alt="Hôtel Le soleil" src="Photos/hebergements/4_small/hotelelsoleildumatin.jpg">
-                                    <figcaption>
-                                        <div class="Gras">Hôtel Le soleil du matin
-                                        </div>
-                                        <br><br> Nuit à partir de 128€
-                                        <br><br><br>
-                                        <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </figcaption>     
+                                    <figure>
+                                        <figcaption>
+                                            <div class="Gras">Hôtel Le soleil du matin
+                                            </div>
+                                            <br><br> Nuit à partir de 128€
+                                            <br><br><br>
+                                            <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </figcaption>
+                                    </figure>        
                             </div>
                         </a>
                         <a href="...">
                             <div class="SousElement22">
                                 <img alt="Au coeur de l'eau Chambres d'hôtes" src="Photos/hebergements/4_small/aucoeurdeleauchambredhote.jpg"> 
-                                    <figcaption>
-                                        <div class="Gras">Au coeur de l'eau 
-                                            <br>Chambre d'hôtes
-                                        </div>
-                                        <br><br> Nuit à partir de 71€ 
-                                        <br><br>                               
-                                        <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa fa-star"></i>
-                                    </figcaption>
+                                    <figure>
+                                        <figcaption>
+                                            <div class="Gras">Au coeur de l'eau 
+                                                <br>Chambre d'hôtes
+                                            </div>
+                                            <br><br> Nuit à partir de 71€ 
+                                            <br><br>                               
+                                            <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa fa-star"></i>
+                                        </figcaption>
+                                    </figure>
                             </div>
                         </a>
                         <a href="...">
                             <div class="SousElement22">
                                 <img alt="Hôtel tout bleu et blanc" src="Photos/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                                <figure>
                                     <figcaption>
                                         <div class="Gras">Hôtel Tout bleu et Blanc
                                         </div>
@@ -153,6 +152,7 @@
                                     <br><br><br>
                                     <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa fa-star"></i>
                                     </figcaption>
+                                </figure>         
                             </div>
                         </a>
                 </div>
@@ -164,49 +164,55 @@
                 <a href="...">
                     <div class="Img1">
                         <img alt="Vieux Port" src="Photos/activites/4_small/Vieux_port.jpg">
+                        <figure>
                             <figcaption>Vieux Port</figcaption> 
+                        </figure>               
                     </div>
                 </a>
                 <div class="Images2">
                     <a href="...">
-                        <div class="Img2dessus">
                             <div class="Img2">
                                 <img alt="Fort de Pomègues" src="Photos/activites/4_small/Fort.jpg">
-                                <figcaption>Fort de Pomègues</figcaption>
+                                <figure>
+                                    <figcaption>Fort de Pomègues</figcaption>
+                                </figure>        
                             </div>
-                        </div>
                     </a>
                     <a href="...">
-                        <div class="Img2dessous">
-                            <div class="Img2">
+                            <div class="Img3">
                                 <img alt="Îles du Frioul" src="Photos/activites/4_small/Frioul.jpg">
-                                <figcaption>Îles du Frioul</figcaption>
+                                <figure>
+                                    <figcaption>Îles du Frioul</figcaption>
+                                </figure>
                             </div>
-                        </div>
-                    </a>        
-                </div>
+                    </a> 
+                </div>       
                 <a href="...">
-                    <div class="Img1">
+                    <div class="Img11">
                         <img alt="Parc National des Calanques" src="Photos/activites/4_small/Calanques.jpg">
-                        <figcaption>Parc National des Calanques</figcaption>
+                        <figure>
+                            <figcaption>Parc National des Calanques</figcaption>
+                        </figure>
                     </div>
                 </a>  
                 <div class="Images2">
                     <a href="...">
                         <div class="Img2dessus">
-                            <div class="Img2">
+                            <div class="Img4">
                                 <img alt="Note-Dame-de-la-garde" src="Photos/activites/4_small/la_garde.jpg">
-                                <figcaption>Notre-Dâme-de-la-Garde</figcaption>
+                                <figure>
+                                    <figcaption>Notre-Dâme-de-la-Garde</figcaption>
+                                </figure>
                             </div>
                         </div>
                     </a>
                     <a href="...">
-                        <div class="Img2dessous">
-                            <div class="Img2">
+                            <div class="Img5">
                                 <img alt="Parc Longchamp" src="Photos/activites/4_small/longchamp.jpg">
-                                <figcaption>Parc Longchamp</figcaption>
+                                <figure>
+                                    <figcaption>Parc Longchamp</figcaption>
+                                </figure>
                             </div>
-                        </div>
                     </a>                                    
                 </div>
             </div>
