@@ -1,1 +1,0 @@
-document.getElementById("SousElement2").innerHTML = " ";
