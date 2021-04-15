@@ -189,12 +189,12 @@ nav a
     justify-content: space-around;
 }
 
-#Hébergements a
+#Hébergements_title a
 {
     text-decoration: none;
     font-weight: 500;
 }
-#SousElement1
+#Hébergements
 {
     height: auto;
     width: 61%;
@@ -204,7 +204,7 @@ nav a
     background-color: rgb(242, 242, 242);
     border-radius: 20px;
 }
-#SousElement1 a
+#Hébergements a
 {
     text-decoration: none;
     color: black;
