@@ -211,7 +211,7 @@ nav a
 }
 .SousElement11 img
 {
-    width: 240px;
+    width: 100%;
     height: 130px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -223,7 +223,7 @@ nav a
     margin: 17px;
     padding: 7px;
     display: inline-block;
-    width: 240px;
+    width: 25%;
     height: 185px;
     background-color: white;
     border-radius: 15px;
@@ -658,7 +658,12 @@ span
    #Hébergements
    {
        margin-left: 10px;
-       width: 50%;
+       width: 95%;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       order: 2;
+       padding: 0;
    }
    #Afficher
    {
@@ -675,6 +680,10 @@ span
    .SousElement11 img
    {
        width: 100%;
+   }
+   #SousElement2 h2
+   {
+       margin-left: 5%;
    }
    .SousElement22
    {
@@ -865,6 +874,10 @@ span
     {
         margin-left: 3px;
     }
+    #Hébergements
+    {
+        width: 90%;
+    }
 }
 @media screen and (max-width:768px) and (min-width:376px)
 {
@@ -925,6 +938,10 @@ span
     }
     .Partie{
         margin-right: 15%;
+    }
+    #Hébergements
+    {
+        width: 90%;
     }
 }
  
